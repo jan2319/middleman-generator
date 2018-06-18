@@ -2,3 +2,25 @@
 @import "alert";
 @import "banner";
 @import "cards";
+
+.resulttext {
+  font-size: 8vh;
+  font-weight: bold;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+.result {
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10vh;
+}
+
+.moreresults p {
+  font-size: 25px;
+  font-weight: light;
+  color: white;
+  opacity: 0.8;
+  margin-bottom: 30px;
+}

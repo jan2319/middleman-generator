@@ -1,0 +1,25 @@
+<!-- Access data.flats with owner's name as key -->
+<% text = data.texts[:love] %>
+<% text.text1 %>
+<% text_new = text.map{|x|x.flatten} %>
+<% text_new %>
+<% sentences = [] %>
+<% text_new.each do |text| %>
+<% sentences << text[1] %>
+<% end %>
+
+<!-- source/flats/show.html.erb -->
+ <div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('images/header.png');">
+    <div class="banner-content">
+      <div class="result">
+        <span class="resulttext">
+          <%= sentences.sample %>
+        </span>
+      </div>
+      <div class="moreresults">
+        <p>Das hat noch nicht gereicht?</p>
+        <a href="love.html" class="btn btn-danger btn-lg">Mehr, bitte :)</a>
+      </div>
+    </div>
+  </div>
+
