@@ -1,22 +1,12 @@
 <!-- Access data.flats with owner's name as key -->
-<% def randomize %>
-<% text = data.texts[:love] %>
-<% text_new = text.map{|x|x.flatten} %>
-<% text_new %>
-<% sentences = [] %>
-<% text_new.each do |text| %>
-<% sentences << text[1] %>
-<% end %>
-<% sentence = sentences.sample %>
-<% sentence %>
-<% end %>
+
 
 <!-- source/flats/show.html.erb -->
- <div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('images/header.png');">
+ <div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('#images/header.png');">
     <div class="banner-content">
       <div class="result">
         <span class="resulttext">
-          <%= randomize %>
+          <%= data.texts.sample.sentence %>
         </span>
       </div>
       <div class="moreresults">
